@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Johnson",
+    "classifications": [ "C#", "MVC" ],
+    "identity": "Johnson.mvc.8.Template",
+    "name": "餐卡登入登出",
+    "shortName": "foodmvc8",
+    "sourceName":"foodmvc8",
+    "tags": {
+      "language": "C#",
+      "type": "project"
+    }
+}

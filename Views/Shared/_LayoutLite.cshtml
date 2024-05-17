@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>iPortfolio Bootstrap Template - Index</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+<link rel="stylesheet" href="@Url.Content("~/lib/jqueryui/themes/base/jquery-ui.min.css")" />
+    <!-- Favicons -->
+    <link href="@Url.Content("~/lib/iPortfolio-pro/assets/img/favicon.png")" rel="icon">
+    <link href="@Url.Content("~/lib/iPortfolio-pro/assets/img/apple-touch-icon.png")" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="@Url.Content("~/lib/iPortfolio-pro/assets/vendor/aos/aos.css")" rel="stylesheet">
+    <link href="@Url.Content("~/lib/iPortfolio-pro/assets/vendor/bootstrap/css/bootstrap.min.css")" rel="stylesheet">
+    <link href="@Url.Content("~/lib/iPortfolio-pro/assets/vendor/bootstrap-icons/bootstrap-icons.css")"
+        rel="stylesheet">
+    <link href="@Url.Content("~/lib/iPortfolio-pro/assets/vendor/boxicons/css/boxicons.min.css")" rel="stylesheet">
+    <link href="@Url.Content("~/lib/iPortfolio-pro/assets/vendor/glightbox/css/glightbox.min.css")" rel="stylesheet">
+    <link href="@Url.Content("~/lib/iPortfolio-pro/assets/vendor/swiper/swiper-bundle.min.css")" rel="stylesheet">
+    <link href="@Url.Content("~/lib/font-awesome/css/all.css")" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="@Url.Content("~/lib/iPortfolio-pro/assets/css/style.css")" rel="stylesheet">
+    <link href="@Url.Content("~/css/siteadmin.css")" rel="stylesheet">
+    <link rel="stylesheet" href="@Url.Content("~/lib/datepicker/datepicker.css")" />
+    @await RenderSectionAsync("Styles", required: false)
+
+    <script src="@Url.Content("~/lib/datepicker/datepicker.js")"></script>
+    <script src="@Url.Content("~/lib/datepicker/datepicker-zh-TW.js")"></script>
+    <!-- =======================================================
+  * Template Name: iPortfolio - v3.7.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+    <!-- ======= Header ======= -->
+    <header id="header">
+        <div class="d-flex flex-column">
+
+            @if (SessionService.IsLogin)
+            {
+                <div class="profile">
+                    <img src="@Url.Content(SessionService.UserImage)" alt="" 
+                        class="circle rounded-circle">
+                    <h1 class="text-light"><a href="index.html">@SessionService.UserName</a></h1>
+                    <div class="social-links mt-3 text-center">
+                        <a 
+                            href="@Url.Action("Profile" , "User" , new {area = ""})" title="我的帳號">
+                            <i class="bi bi-person"></i>
+                        </a>
+                        <a 
+                            href="@Url.Action("ResetPassword" , "User" , new {area = ""})" title="重設密碼">
+                            <i class="bi bi-key"></i>
+                        </a>
+                        <a href="@Url.Action("Logout" , "User" , new {area = ""})" title="登出系統">
+                            <i class="bi bi-box-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="profile">
+                    <img src="@Url.Content("~/images/users/lan.jpg")" alt=""
+                        class="img-fluid rounded-circle">
+                    <h1 class="text-light"><a href="@Url.Action("Login" , "User" , new {area = ""})">登入帳號</a></h1>
+                </div>
+            }
+
+            <nav id="navbar" class="nav-menu navbar">
+                <ul>
+                    <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i>
+                            <span>Home</span></a></li>
+                    <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a>
+                    </li>
+                    <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i>
+                            <span>Resume</span></a></li>
+                    <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
+                            <span>Portfolio</span></a></li>
+                    <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i>
+                            <span>Services</span></a></li>
+                    <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i>
+                            <span>Contact</span></a></li>
+                </ul>
+            </nav><!-- .nav-menu -->
+        </div>
+    </header><!-- End Header -->
+
+    <div class="container">
+        <main role="main" class="pb-3">
+        @RenderBody()
+        </main>
+    </div>
+
+    @await RenderSectionAsync("ScriptsBody", required: false)
+</body>
+</html>

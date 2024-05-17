@@ -1,0 +1,167 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = csproject
+build_property.RootNamespace = csproject
+build_property.ProjectDir = D:\Project\csproject\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Project\csproject
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Project/csproject/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Areas/Admin/Views/User/CreateEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxDcmVhdGVFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Areas/Admin/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Views/CodeGenerator/CreateArea.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29kZUdlbmVyYXRvclxDcmVhdGVBcmVhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Views/CodeGenerator/CreateController.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29kZUdlbmVyYXRvclxDcmVhdGVDb250cm9sbGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Views/CodeGenerator/CreateDbContext.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29kZUdlbmVyYXRvclxDcmVhdGVEYkNvbnRleHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Views/CodeGenerator/CreateDbContextTables.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29kZUdlbmVyYXRvclxDcmVhdGVEYkNvbnRleHRUYWJsZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Views/CodeGenerator/CreateMetadata.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29kZUdlbmVyYXRvclxDcmVhdGVNZXRhZGF0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Views/CodeGenerator/CreateMetadataTables.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29kZUdlbmVyYXRvclxDcmVhdGVNZXRhZGF0YVRhYmxlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Views/CodeGenerator/CreateRepository.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29kZUdlbmVyYXRvclxDcmVhdGVSZXBvc2l0b3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Views/CodeGenerator/CreateRepositorySort.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29kZUdlbmVyYXRvclxDcmVhdGVSZXBvc2l0b3J5U29ydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Views/CodeGenerator/CreateRepositoryTables.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29kZUdlbmVyYXRvclxDcmVhdGVSZXBvc2l0b3J5VGFibGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Views/CodeGenerator/CreateView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29kZUdlbmVyYXRvclxDcmVhdGVWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Views/CodeGenerator/CreateViewList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29kZUdlbmVyYXRvclxDcmVhdGVWaWV3TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Views/CodeGenerator/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29kZUdlbmVyYXRvclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Views/CodeGenerator/Message.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29kZUdlbmVyYXRvclxNZXNzYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Views/Shared/_LayoutCodeGenerator.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRDb2RlR2VuZXJhdG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Views/Shared/_LayoutLite.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRMaXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Views/Shared/_PartialAlertMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXJ0aWFsQWxlcnRNZXNzYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Views/User/EditProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0UHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Views/User/Forget.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxGb3JnZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Views/User/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Views/User/MessageResult.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxNZXNzYWdlUmVzdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Views/User/PhotoUpload.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxQaG90b1VwbG9hZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Views/User/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Views/User/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Views/User/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/csproject/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-d460nbwiv0

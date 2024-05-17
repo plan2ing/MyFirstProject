@@ -1,0 +1,112 @@
+@model vmRegister
+
+@{
+    ViewData["Title"] = ActionService.ViewActionName; ;
+    Layout = "_LayoutLite";
+    // 下拉式選單
+    List<SelectListItem> RoleList = new List<SelectListItem>();
+    List<SelectListItem> DepartmentList = new List<SelectListItem>();
+    List<SelectListItem> GenderList = new List<SelectListItem>();
+
+    using var role = new z_sqlRoles();
+    using var dept = new z_sqlDepartments();
+    using var gender = new z_sqlGenders();
+    RoleList = role.GetDropDownList("RoleNo", "RoleName", "RoleNo", true);
+    DepartmentList = dept.GetDropDownList("DeptNo", "DeptName", "DeptNo", true);
+    GenderList = gender.GetDropDownList("GenderNo", "GenderName", "GenderNo", false);
+}
+
+<div class="card card-size-small mt-5">
+    <div class="card header bg-secondary text-white">
+        <div class="pt-2 px-2">
+            <div class="float-start">
+                <h4>@ActionService.ViewActionName</h4>
+            </div>
+            <div class="float-end">
+                <h4>@ActionService.ViewPrgInfo</h4>
+            </div>
+        </div>
+    </div>
+    <div class="card body p-2">
+        <form asp-action="Register">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @Html.HiddenFor(m => m.RoleNo)
+            
+            <div class="row form-group">
+                <label asp-for="UserNo" class="control-label col-md-3"></label>
+                <div class="col-md-9">
+                    <input asp-for="UserNo" class="form-control" />
+                    <span asp-validation-for="UserNo" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row form-group">
+                <label asp-for="UserName" class="control-label col-md-3"></label>
+                <div class="col-md-9">
+                    <input asp-for="UserName" class="form-control" />
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row form-group">
+                <label asp-for="Password" class="control-label col-md-3"></label>
+                <div class="col-md-9">
+                    <input asp-for="Password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row form-group">
+                <label asp-for="ConfirmPassword" class="control-label col-md-3"></label>
+                <div class="col-md-9">
+                    <input asp-for="ConfirmPassword" class="form-control" />
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row form-group">
+                <label asp-for="RoleNo" class="control-label col-md-3"></label>
+                <div class="col-md-9">
+                    <input asp-for="RoleNo" class="form-control" readonly= "readonly" disabled="disabled" />
+                    @* <select asp-for="RoleNo" asp-items="@RoleList" class="form-control"></select> *@
+                    <span asp-validation-for="RoleNo" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row form-group">
+                <label asp-for="DeptNo" class="control-label col-md-3"></label>
+                <div class="col-md-9">
+                    <select asp-for="DeptNo" asp-items="@DepartmentList" class="form-control"></select>
+                    <span asp-validation-for="DeptNo" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row form-group">
+                <label asp-for="GenderNo" class="control-label col-md-3"></label>
+                <div class="col-md-9">
+                    <select asp-for="GenderNo" asp-items="@GenderList" class="form-control"></select>
+                    <span asp-validation-for="GenderNo" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row form-group">
+                <label asp-for="Email" class="control-label col-md-3"></label>
+                <div class="col-md-9">
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row form-group">
+                <label asp-for="Tel" class="control-label col-md-3"></label>
+                <div class="col-md-9">
+                    <input asp-for="Tel" class="form-control" />
+                    <span asp-validation-for="Tel" class="text-danger"></span>
+                </div>
+            </div>
+            <hr>
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <div class="float-start">
+                        <input type="submit" value="註冊帳號" class="btn btn-primary" />
+                    </div>
+                    <div class="float-end">
+                        @Html.ActionLink("回登入頁", "Login", "User", new { area = "" }, new { @class = "btn btn-success" })
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

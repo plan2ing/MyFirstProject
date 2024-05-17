@@ -1,0 +1,135 @@
+@model csproject.Models.Users
+
+@{
+    Layout = "_LayoutAdmin";
+    string str_command = (Model.Id == 0) ? "新增" : "修改";
+    ViewData["Title"] = $"客戶資料{str_command}";
+
+    List<SelectListItem> RoleList = new List<SelectListItem>();
+    List<SelectListItem> DepartmentList = new List<SelectListItem>();
+    List<SelectListItem> GenderList = new List<SelectListItem>();
+
+    using var role = new z_sqlRoles();
+    using var dept = new z_sqlDepartments();
+    using var gender = new z_sqlGenders();
+    RoleList = role.GetDropDownList("RoleNo", "RoleName", "RoleNo", true);
+    DepartmentList = dept.GetDropDownList("DeptNo", "DeptName", "DeptNo", true);
+    GenderList = gender.GetDropDownList("GenderNo", "GenderName", "GenderNo", false);
+}
+
+<div class="card border-secondary card-size-medium">
+    <div class="card-header bg-secondary text-white">
+        <h5>@ViewData["Title"]</h3>
+    </div>
+    <div class="card-body">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            <div class="form-horizontal">
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                @Html.HiddenFor(model => model.Id)
+
+                <div class="row form-group">
+                    @Html.LabelFor(model => model.IsValid, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.IsValid)
+                            @Html.ValidationMessageFor(model => model.IsValid, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    @Html.LabelFor(model => model.UserNo, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.UserNo, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.UserNo, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="row form-group">
+                    @Html.LabelFor(model => model.UserName, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="row form-group">
+                    @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="row form-group">
+                    @Html.LabelFor(model => model.RoleNo, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.DropDownListFor(model => model.RoleNo, RoleList , new { @class = "form-control selectpicker" , data_live_search = "true" })
+                        @Html.ValidationMessageFor(model => model.RoleNo, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="row form-group">
+                    @Html.LabelFor(model => model.DeptNo, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.DropDownListFor(model => model.DeptNo, DepartmentList , new { @class = "form-control selectpicker" , data_live_search = "true" })
+                        @Html.ValidationMessageFor(model => model.DeptNo, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="row form-group">
+                    @Html.LabelFor(model => model.GenderNo, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.DropDownListFor(model => model.GenderNo, GenderList , new { @class = "form-control selectpicker" , data_live_search = "true" })
+                        @Html.ValidationMessageFor(model => model.GenderNo, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="row form-group">
+                    @Html.LabelFor(model => model.Birthday, htmlAttributes: new { @class = "control-label col-md-2"  })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Birthday, new { htmlAttributes = new { @class = "form-control datepicker" , @type="text"} })
+                        @Html.ValidationMessageFor(model => model.Birthday, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="row form-group">
+                    @Html.LabelFor(model => model.OnboardDate, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.OnboardDate, new { htmlAttributes = new { @class = "form-control datepicker" , @type="text" } })
+                        @Html.ValidationMessageFor(model => model.OnboardDate, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="row form-group">
+                    @Html.LabelFor(model => model.LeaveDate, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.LeaveDate, new { htmlAttributes = new { @class = "form-control datepicker" , @type="text" } })
+                        @Html.ValidationMessageFor(model => model.LeaveDate, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="row form-group">
+                    @Html.LabelFor(model => model.ContactEmail, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.ContactEmail, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.ContactEmail, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="row form-group">
+                    @Html.LabelFor(model => model.ContactTel, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.ContactTel, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.ContactTel, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="row form-group">
+                    @Html.LabelFor(model => model.Remark, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Remark, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Remark, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <hr>
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <input type="submit" value="異動存檔" class="btn btn-primary" />
+                        @Html.ActionLink("返回列表" , "Index" ,"User" , new {area="Admin"} , new {@class="btn btn-success"})
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
