@@ -22,7 +22,6 @@ namespace csproject.Models
         {
             string str_query = @"
 SELECT Users.Id, Users.IsValid, Users.UserNo, Users.UserName, Users.Password, 
-SELECT Users.Id, Users.IsValid, Users.UserNo, Users.UserName, Users.Password, 
 Users.RoleNo, Roles.RoleName, Users.GenderNo, Genders.GenderName, 
 Users.DeptNo, Departments.DeptName, Users.Birthday, Users.OnboardDate, 
 Users.LeaveDate, Users.ContactEmail, Users.ContactTel, Users.Remark, 

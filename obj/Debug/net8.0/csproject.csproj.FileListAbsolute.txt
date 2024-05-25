@@ -611,6 +611,7 @@ D:\Project\csproject\obj\Debug\net8.0\csproject.MvcApplicationPartsAssemblyInfo.
 D:\Project\csproject\obj\Debug\net8.0\csproject.MvcApplicationPartsAssemblyInfo.cache
 D:\Project\csproject\obj\Debug\net8.0\csproject.RazorAssemblyInfo.cache
 D:\Project\csproject\obj\Debug\net8.0\csproject.RazorAssemblyInfo.cs
+D:\Project\csproject\obj\Debug\net8.0\csproject.sourcelink.json
 D:\Project\csproject\obj\Debug\net8.0\staticwebassets.build.json
 D:\Project\csproject\obj\Debug\net8.0\staticwebassets.development.json
 D:\Project\csproject\obj\Debug\net8.0\staticwebassets\msbuild.csproject.Microsoft.AspNetCore.StaticWebAssets.props
